@@ -1,0 +1,31 @@
+» pip install robotframework
+» pip freeze | Consultar pacotes instalados
+
+- - Libraries » External - -
+» Selenium Libray | Test Suit Web
+pip install --upgrade robotframework-seleniumlibrary
+
+» HTTP library (Requests) | Test API
+pip install robotframework-requests
+
+» Pip Atualizado
+python3 -m pip install --upgrade pip
+
+» Extensão sugerida pelo VsCode
+pip install -U pylint
+
+robot -d ./results SuiteSiteTestePractice/tests/TestSitePractice.robot
+
+
+    Acessar a página home do site
+    Digitar o nome do produto "Blouse" no campo de pesquisa
+    Clicar no botão Pesquisar
+    Conferir se o produto "Blouse" foi listado no site
+
+Caso de Teste 02: Pesquisar produto não existente
+    Acessar a página home do site
+    Digitar o nome do produto "itemNãoExistente" no campo de pesquisa
+    Clicar no botão Pesquisar
+    Conferir mensagem de erro "No results were found for your search" "itemNãoExistente"
+
+*** Keywords ***
